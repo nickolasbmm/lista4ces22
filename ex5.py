@@ -4,7 +4,7 @@ class DocumentState(object):
    allowed = []
 
    def switch(self, state):
-      """ Switch to new state """
+      #Switch to new state
       if state.name in self.allowed:
          print("Current state:",self," => ",self.comment[self.allowed.index(state.name)],"=> switched to new state:",state.name)
          self.__class__ = state
@@ -35,10 +35,13 @@ class Document(object):
       self.state = Draft()
    
    def change(self, state):
-      """ Change state """
+      #Change state
       self.state.switch(state)
 
 if __name__ == "__main__":
+
+   #Examples
+   
    doc = Document()
    doc.change(Draft)
    doc.change(Moderation)

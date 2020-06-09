@@ -3,15 +3,15 @@ from abc import *
 import ast
 
 class ICommand(metaclass=ABCMeta):
-    """The command interface, which all commands will implement"""
+    #The command interface, which all commands will implement
 
     @abstractstaticmethod
     def execute():
-        """The required execute method which all command obejcts will use"""
+        #The required execute method which all command obejcts will use
 
 
 class AddFundsCommand(ICommand):
-    """A Command object, which implemets the ICommand interface"""
+    #A Command object, which implemets the ICommand interface
 
     def __init__(self, user):
         self.user = user
@@ -22,7 +22,7 @@ class AddFundsCommand(ICommand):
 
 
 class ShowHistoryCommand(ICommand):
-    """A Command object, which implemets the ICommand interface"""
+    #A Command object, which implemets the ICommand interface
 
     def __init__(self, user):
         self.user = user
@@ -31,7 +31,7 @@ class ShowHistoryCommand(ICommand):
         return self.user.show_history()
 
 class SessionHistoryCommand(ICommand):
-    """A Command object, which implemets the ICommand interface"""
+    #A Command object, which implemets the ICommand interface
 
     def __init__(self, user):
         self.user = user
@@ -40,7 +40,7 @@ class SessionHistoryCommand(ICommand):
         return self.user.session_history()
 
 class TransferFundsCommand(ICommand):
-    """A Command object, which implemets the ICommand interface"""
+    #A Command object, which implemets the ICommand interface
 
     def __init__(self, user):
         self.user = user
@@ -53,7 +53,7 @@ class TransferFundsCommand(ICommand):
 
 class Switch:
 
-    """The Invoker Class"""
+    #The Invoker Class
 
     def __init__(self):
         self._commands = {}
@@ -186,7 +186,7 @@ if __name__ == "__main__":
 
 
     app = Tk()
-    app.title("Banco Cliente")
+    app.title("PyBank")
     app.geometry("800x600")
     app.resizable(0,0)
 
