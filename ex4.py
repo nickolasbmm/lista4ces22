@@ -132,6 +132,7 @@ if __name__ == "__main__":
             e.delete(0,"end")
             e.insert(0,"Insert value")
             labelmessage(message)
+            account_funds["text"] = "Funds: $" + str(user.funds)
     
     def transfer_button():
         destination = d.get()
@@ -142,7 +143,7 @@ if __name__ == "__main__":
             e.insert(0,"Insert value")
             d.delete(0,"end")
             d.insert(0,"Insert destination")
-
+            account_funds["text"] = "Funds: $" + str(user.funds)
             labelmessage(message)
 
     def statement_button():
@@ -196,6 +197,9 @@ if __name__ == "__main__":
     d = Entry(app)
     d.insert(0,"Insert destination")
     d.pack()
+
+    account_funds = Label(app,text = "Funds: $" + str(user.funds))
+    account_funds.pack()
 
 
     deposit = Button(app,text = "Deposit Funds",command = deposit_button)

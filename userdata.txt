@@ -1,1 +1,1 @@
-{'funds': 118.0, 'history': '--- Account Statement ---\nDeposit: $ 1.0\nDeposit: $ 123.0\nTransfer to edison: $ 12.0\nTransfer to kl: $ 0.0\nDeposit: $ 12.0\nTransfer to hg: $ 6.0\n'}
+{'funds': 80.0, 'history': '--- Account Statement ---\nDeposit: $ 1.0\nDeposit: $ 123.0\nTransfer to edison: $ 12.0\nTransfer to kl: $ 0.0\nDeposit: $ 12.0\nTransfer to hg: $ 6.0\nDeposit: $ 12.0\nTransfer to abraham: $ 50.0\n'}
